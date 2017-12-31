@@ -2,7 +2,7 @@ import fresh_tomatoes
 import media
 
 
-# Movie specific data
+# Begin movie-specific data list
 wall_e = media.Movie("Wall-E",
                      "https://upload.wikimedia.org/wikipedia/en/c/c2/WALL-Eposter.jpg",  # NOQA
                      "https://www.youtube.com/watch?v=ZisWjdjs-gM")
@@ -26,6 +26,8 @@ toy_story = media.Movie("Toy Story",
 frozen = media.Movie("Frozen",
                      "https://upload.wikimedia.org/wikipedia/en/0/05/Frozen_%282013_film%29_poster.jpg",  # NOQA
                      "https://www.youtube.com/watch?v=TbQm5doF_Uc")
+# End movie-specific data list
 
+# Specify movies to be shown in HTML output
 movies = [wall_e, up, pokemon, finding_nemo, toy_story, frozen]
 fresh_tomatoes.open_movies_page(movies)
